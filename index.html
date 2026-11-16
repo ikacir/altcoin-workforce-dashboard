@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1220"><title>Altcoin Workforce Dashboard</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1220;--panel:#121d30;--line:#26364f;--muted:#91a2ba;--text:#edf3fb;--green:#45d6a0;--red:#ff7185;--blue:#79aaff}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#172943 0,var(--bg) 55%);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:1180px;margin:auto;padding:30px 20px 60px}.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:24px}h1{font-size:clamp(24px,4vw,36px);margin:0;letter-spacing:-.04em}.sub,.muted{color:var(--muted)}button{background:#203754;color:var(--text);border:1px solid #3b5577;padding:9px 14px;border-radius:10px;font-weight:600;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.panel{background:linear-gradient(160deg,#17263c,#111b2c);border:1px solid var(--line);border-radius:16px;padding:18px;min-width:0}.metric{font-size:clamp(22px,3vw,30px);font-weight:700;letter-spacing:-.04em;margin-top:6px}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}section{margin-top:20px}h2{font-size:18px;margin:0 0 14px}table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);white-space:nowrap}th{color:var(--muted);font-weight:600}td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}.table-wrap{overflow:auto}.positive{color:var(--green)}.negative{color:var(--red)}.pill{border:1px solid var(--line);border-radius:999px;padding:3px 8px;color:var(--blue);font-size:12px}.weights{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.weight{display:grid;grid-template-columns:minmax(0,1fr) 90px;gap:12px;align-items:center}.bar{height:7px;background:#26364f;border-radius:9px;overflow:hidden;margin-top:5px}.bar i{display:block;height:100%;background:var(--blue)}.error{border-color:#8a4350;color:#ffdce1}.footer{margin-top:24px;font-size:12px;color:var(--muted)}@media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){main{padding:20px 12px}.grid{gap:9px}.panel{padding:13px}.weights{grid-template-columns:1fr}}
+</style></head>
+<body><main>
+<header class="top"><div><h1>Altcoin Workforce</h1><div class="sub">Read-only research, settlement & learning dashboard</div></div><div><button id="refresh">Refresh data</button></div></header>
+<div id="status" class="sub">Loading public snapshot…</div>
+<div id="app" hidden>
+<section class="grid" id="metrics"></section>
+<section class="panel"><h2>Factor weights</h2><div id="weights" class="weights"></div></section>
+<section class="panel"><h2>Learning engine</h2><div id="learning"></div></section>
+<section class="panel"><h2>Recent plans</h2><div class="table-wrap"><table><thead><tr><th>Date</th><th>Status</th><th>Selected assets</th></tr></thead><tbody id="plans"></tbody></table></div></section>
+<section class="panel"><h2>Settlement performance</h2><div class="table-wrap"><table><thead><tr><th>Date</th><th class="num">BTC return</th><th class="num">Selected avg. net</th><th class="num">Selected avg. excess</th><th class="num">Learning samples</th><th>Selected assets</th></tr></thead><tbody id="performance"></tbody></table></div></section>
+</div>
+<div class="footer">Public, sanitised snapshot · Read-only · Not investment advice. Values are historical paper/live strategy measurements, not a guarantee of future performance.</div>
+</main>
+<script>
+const fmt=(v)=>((v>=0?'+':'')+(v*100).toFixed(2)+'%');
+const cls=(v)=>v>0?'positive':v<0?'negative':'';
+const pct=(v)=>Math.min(100,Math.abs(v)*100);
+async function load(){
+ const status=document.getElementById('status');status.textContent='Refreshing…';
+ try{
+  const res=await fetch('./public-data.json?ts='+Date.now(),{cache:'no-store'});
+  if(!res.ok)throw new Error('Snapshot unavailable ('+res.status+')');
+  const d=await res.json();
+  if(d.schema_version!==1||!d.overview||!Array.isArray(d.performance)||!Array.isArray(d.plans)||!d.weights)throw new Error('Snapshot schema is invalid');
+  const o=d.overview;
+  const metrics=[
+   ['Settlements',o.settlement_count],['Latest settlement',new Date(o.latest_settlement_at).toLocaleString()],
+   ['BTC return · latest',fmt(o.latest_btc_return)],['Selected avg. net · latest',fmt(o.latest_selected_average_net_return)]
+  ];
+  document.getElementById('metrics').innerHTML=metrics.map(([k,v],i)=>'<div class="panel"><div class="kicker">'+k+'</div><div class="metric '+(i>=2?cls(i===2?o.latest_btc_return:o.latest_selected_average_net_return):'')+'">'+v+'</div></div>').join('');
+  const max=Math.max(.01,...Object.values(d.weights).map(Math.abs));
+  document.getElementById('weights').innerHTML=Object.entries(d.weights).sort((a,b)=>Math.abs(b[1])-Math.abs(a[1])).map(([k,v])=>'<div class="weight"><div>'+k.replaceAll('_',' ')+'<div class="bar"><i style="width:'+pct(v/max)+'%"></i></div></div><strong class="'+cls(v)+'">'+v.toFixed(4)+'</strong></div>').join('');
+  const l=d.learning||{};document.getElementById('learning').innerHTML='<span class="pill">'+l.status+'</span> <strong>'+l.samples+'</strong> observations in latest learning update';
+  document.getElementById('plans').innerHTML=[...d.plans].reverse().map(p=>'<tr><td>'+p.date+'</td><td><span class="pill">'+p.status+'</span></td><td>'+p.selected_symbols.join(', ')+'</td></tr>').join('');
+  document.getElementById('performance').innerHTML=[...d.performance].reverse().map(p=>'<tr><td>'+p.date+'</td><td class="num '+cls(p.btc_return)+'">'+fmt(p.btc_return)+'</td><td class="num '+cls(p.selected_average_net_return)+'">'+fmt(p.selected_average_net_return)+'</td><td class="num '+cls(p.selected_average_excess_return)+'">'+fmt(p.selected_average_excess_return)+'</td><td class="num">'+p.learning_samples+'</td><td>'+p.selected.map(x=>x.symbol).join(', ')+'</td></tr>').join('');
+  document.getElementById('app').hidden=false;status.textContent='Snapshot generated '+new Date(d.generated_at).toLocaleString()+' · '+d.performance.length+' settlements';
+ }catch(e){status.textContent='Dashboard data error: '+e.message;status.className='panel error'}
+}
+document.getElementById('refresh').addEventListener('click',load);load();
+</script></body></html>
