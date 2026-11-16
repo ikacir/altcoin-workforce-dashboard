@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T05:33:32.836993+00:00",
+  "generated_at": "2026-11-16T05:45:44.128449+00:00",
   "learning": {
     "factor_correlations": {
       "candle_strength": 0.17660177252205983,
@@ -152,6 +152,18 @@
         "HYPE/USD"
       ],
       "status": "settled"
+    },
+    {
+      "created_at": "2026-11-16T05:38:27.604875+00:00",
+      "date": "2026-11-16",
+      "selected_symbols": [
+        "RARE/USD",
+        "VVV/USD",
+        "DRV/USD",
+        "XLM/USD",
+        "NEAR/USD"
+      ],
+      "status": "open"
     }
   ],
   "schema_version": 1,
