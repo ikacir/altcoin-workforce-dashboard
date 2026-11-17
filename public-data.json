@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-16T05:45:44.128449+00:00",
+  "generated_at": "2026-11-17T00:08:51.446239+00:00",
   "learning": {
     "factor_correlations": {
-      "candle_strength": 0.17660177252205983,
-      "momentum_acceleration": -0.1734958085459748,
-      "rel_mom_1d": -0.13243484643706127,
-      "rel_mom_3d": 0.05442135998076665,
-      "rel_mom_7d": -0.025896038190437363,
-      "trend_consistency": 0.1871477184341168,
-      "volatility": -0.17537712205411884,
-      "volume_ratio": 0.136829842529103
+      "candle_strength": -0.49650783424666806,
+      "momentum_acceleration": -0.2652124878052675,
+      "rel_mom_1d": -0.2656238971214783,
+      "rel_mom_3d": -0.1728821958063644,
+      "rel_mom_7d": -0.0162757650988396,
+      "trend_consistency": 0.15318439694118058,
+      "volatility": -0.14966370955705244,
+      "volume_ratio": -0.1393125840835919
     },
-    "samples": 49,
+    "samples": 43,
     "status": "updated"
   },
   "overview": {
-    "latest_btc_return": 9.23298542994111e-05,
-    "latest_learning_samples": 49,
-    "latest_selected_average_excess_return": -0.0010258721073889126,
-    "latest_selected_average_net_return": -0.0009335422530895015,
-    "latest_settlement_at": "2026-11-16T00:07:52.098329+00:00",
-    "settlement_count": 3
+    "latest_btc_return": 0.0021901769366097223,
+    "latest_learning_samples": 43,
+    "latest_selected_average_excess_return": -0.007798982195263047,
+    "latest_selected_average_net_return": -0.005608805258653325,
+    "latest_settlement_at": "2026-11-17T00:07:53.824177+00:00",
+    "settlement_count": 4
   },
   "performance": [
     {
@@ -118,6 +118,46 @@
       "selected_average_excess_return": -0.0010258721073889126,
       "selected_average_net_return": -0.0009335422530895015,
       "settled_at": "2026-11-16T00:07:52.098329+00:00"
+    },
+    {
+      "btc_return": 0.0021901769366097223,
+      "date": "2026-11-16",
+      "learning_samples": 43,
+      "selected": [
+        {
+          "excess_return": -0.0347610259658766,
+          "gross_return": -0.030570849029266878,
+          "net_return": -0.03257084902926688,
+          "symbol": "RARE/USD"
+        },
+        {
+          "excess_return": 0.006028750076053859,
+          "gross_return": 0.010218927012663581,
+          "net_return": 0.008218927012663581,
+          "symbol": "VVV/USD"
+        },
+        {
+          "excess_return": 0.007141467207534504,
+          "gross_return": 0.011331644144144226,
+          "net_return": 0.009331644144144226,
+          "symbol": "DRV/USD"
+        },
+        {
+          "excess_return": -0.012391088469006604,
+          "gross_return": -0.008200911532396882,
+          "net_return": -0.010200911532396882,
+          "symbol": "XLM/USD"
+        },
+        {
+          "excess_return": -0.005013013825020394,
+          "gross_return": -0.0008228368884106718,
+          "net_return": -0.002822836888410672,
+          "symbol": "NEAR/USD"
+        }
+      ],
+      "selected_average_excess_return": -0.007798982195263047,
+      "selected_average_net_return": -0.005608805258653325,
+      "settled_at": "2026-11-17T00:07:53.824177+00:00"
     }
   ],
   "plans": [
@@ -163,19 +203,19 @@
         "XLM/USD",
         "NEAR/USD"
       ],
-      "status": "open"
+      "status": "settled"
     }
   ],
   "schema_version": 1,
   "source_state_version": 2,
   "weights": {
-    "candle_strength": 0.10438811227539813,
-    "momentum_acceleration": 0.08279641799023757,
-    "rel_mom_1d": 0.2336608256054418,
-    "rel_mom_3d": 0.19453213595671423,
-    "rel_mom_7d": 0.14185976708327405,
-    "trend_consistency": 0.1015409692647531,
-    "volatility": -0.1657183680233394,
-    "volume_ratio": 0.1395267057984607
+    "candle_strength": 0.09445795559046477,
+    "momentum_acceleration": 0.07749216823413221,
+    "rel_mom_1d": 0.22834834766301224,
+    "rel_mom_3d": 0.19107449204058694,
+    "rel_mom_7d": 0.14153425178129725,
+    "trend_consistency": 0.10460465720357671,
+    "volatility": -0.16871164221448043,
+    "volume_ratio": 0.13674045411678884
   }
 }
