@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-18T00:17:45.117417+00:00",
+  "generated_at": "2026-11-18T00:47:48.569151+00:00",
   "learning": {
     "factor_correlations": {
-      "candle_strength": -0.49650783424666806,
-      "momentum_acceleration": -0.2652124878052675,
-      "rel_mom_1d": -0.2656238971214783,
-      "rel_mom_3d": -0.1728821958063644,
-      "rel_mom_7d": -0.0162757650988396,
-      "trend_consistency": 0.15318439694118058,
-      "volatility": -0.14966370955705244,
-      "volume_ratio": -0.1393125840835919
+      "candle_strength": -0.25825448119815225,
+      "momentum_acceleration": -0.08304079794526877,
+      "rel_mom_1d": -0.2277567899513295,
+      "rel_mom_3d": -0.16026546484185442,
+      "rel_mom_7d": -0.11395101823140477,
+      "trend_consistency": -0.06010596345350194,
+      "volatility": -0.10235843455641357,
+      "volume_ratio": -0.0203247147625522
     },
-    "samples": 43,
+    "samples": 49,
     "status": "updated"
   },
   "overview": {
-    "latest_btc_return": 0.0021901769366097223,
-    "latest_learning_samples": 43,
-    "latest_selected_average_excess_return": -0.007798982195263047,
-    "latest_selected_average_net_return": -0.005608805258653325,
-    "latest_settlement_at": "2026-11-17T00:07:53.824177+00:00",
-    "settlement_count": 4
+    "latest_btc_return": 5.750010212834944e-05,
+    "latest_learning_samples": 49,
+    "latest_selected_average_excess_return": 0.0024313543495522857,
+    "latest_selected_average_net_return": 0.002488854451680635,
+    "latest_settlement_at": "2026-11-18T00:18:40.174462+00:00",
+    "settlement_count": 5
   },
   "performance": [
     {
@@ -158,6 +158,46 @@
       "selected_average_excess_return": -0.007798982195263047,
       "selected_average_net_return": -0.005608805258653325,
       "settled_at": "2026-11-17T00:07:53.824177+00:00"
+    },
+    {
+      "btc_return": 5.750010212834944e-05,
+      "date": "2026-11-17",
+      "learning_samples": 49,
+      "selected": [
+        {
+          "excess_return": -0.004455581636900628,
+          "gross_return": -0.0023980815347722784,
+          "net_return": -0.004398081534772278,
+          "symbol": "HFT/USD"
+        },
+        {
+          "excess_return": 0.0027968688299104833,
+          "gross_return": 0.004854368932038833,
+          "net_return": 0.0028543689320388328,
+          "symbol": "ICP/USD"
+        },
+        {
+          "excess_return": 0.013496152865908108,
+          "gross_return": 0.015553652968036458,
+          "net_return": 0.013553652968036458,
+          "symbol": "ZRO/USD"
+        },
+        {
+          "excess_return": 0.00037052625930078693,
+          "gross_return": 0.0024280263614291364,
+          "net_return": 0.0004280263614291364,
+          "symbol": "LIGHTER/USD"
+        },
+        {
+          "excess_return": -5.119457045732294e-05,
+          "gross_return": 0.0020063055316710265,
+          "net_return": 6.305531671026501e-06,
+          "symbol": "HYPE/USD"
+        }
+      ],
+      "selected_average_excess_return": 0.0024313543495522857,
+      "selected_average_net_return": 0.002488854451680635,
+      "settled_at": "2026-11-18T00:18:40.174462+00:00"
     }
   ],
   "plans": [
@@ -215,19 +255,19 @@
         "LIGHTER/USD",
         "HYPE/USD"
       ],
-      "status": "open"
+      "status": "settled"
     }
   ],
   "schema_version": 1,
   "source_state_version": 2,
   "weights": {
-    "candle_strength": 0.09445795559046477,
-    "momentum_acceleration": 0.07749216823413221,
-    "rel_mom_1d": 0.22834834766301224,
-    "rel_mom_3d": 0.19107449204058694,
-    "rel_mom_7d": 0.14153425178129725,
-    "trend_consistency": 0.10460465720357671,
-    "volatility": -0.16871164221448043,
-    "volume_ratio": 0.13674045411678884
+    "candle_strength": 0.08929286596650172,
+    "momentum_acceleration": 0.07583135227522683,
+    "rel_mom_1d": 0.22379321186398565,
+    "rel_mom_3d": 0.18786918274374984,
+    "rel_mom_7d": 0.13925523141666915,
+    "trend_consistency": 0.10340253793450667,
+    "volatility": -0.1707588109056087,
+    "volume_ratio": 0.1363339598215378
   }
 }
