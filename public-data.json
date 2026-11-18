@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T00:08:51.446239+00:00",
+  "generated_at": "2026-11-18T00:17:45.117417+00:00",
   "learning": {
     "factor_correlations": {
       "candle_strength": -0.49650783424666806,
@@ -204,6 +204,18 @@
         "NEAR/USD"
       ],
       "status": "settled"
+    },
+    {
+      "created_at": "2026-11-17T23:47:56.688839+00:00",
+      "date": "2026-11-17",
+      "selected_symbols": [
+        "HFT/USD",
+        "ICP/USD",
+        "ZRO/USD",
+        "LIGHTER/USD",
+        "HYPE/USD"
+      ],
+      "status": "open"
     }
   ],
   "schema_version": 1,
