@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T00:38:40.028682+00:00",
+  "generated_at": "2026-11-20T01:37:10.782375+00:00",
   "learning": {
     "factor_correlations": {
       "candle_strength": 0.12376075355601601,
@@ -308,6 +308,18 @@
         "VVV/USD"
       ],
       "status": "settled"
+    },
+    {
+      "created_at": "2026-11-20T01:01:53.746665+00:00",
+      "date": "2026-11-20",
+      "selected_symbols": [
+        "ICNT/USD",
+        "IRYS/USD",
+        "CT/USD",
+        "RAVE/USD",
+        "FAI/USD"
+      ],
+      "status": "open"
     }
   ],
   "schema_version": 1,
