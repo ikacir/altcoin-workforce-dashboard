@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T00:39:15.905255+00:00",
+  "generated_at": "2026-11-21T01:23:17.981705+00:00",
   "learning": {
     "factor_correlations": {
       "candle_strength": -0.13295903571032736,
@@ -360,6 +360,18 @@
         "FAI/USD"
       ],
       "status": "settled"
+    },
+    {
+      "created_at": "2026-11-21T01:01:59.146476+00:00",
+      "date": "2026-11-21",
+      "selected_symbols": [
+        "PAXG/USD",
+        "USD1/USD",
+        "IRYS/USD",
+        "VVV/USD",
+        "RARE/USD"
+      ],
+      "status": "open"
     }
   ],
   "schema_version": 1,
