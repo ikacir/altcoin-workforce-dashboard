@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-21T01:23:17.981705+00:00",
+  "generated_at": "2026-11-22T00:31:36.663920+00:00",
   "learning": {
     "factor_correlations": {
-      "candle_strength": -0.13295903571032736,
-      "momentum_acceleration": -0.36549343669779555,
-      "rel_mom_1d": -0.2408847286008669,
-      "rel_mom_3d": -0.13016479463287564,
-      "rel_mom_7d": 0.04288094627121343,
-      "trend_consistency": -0.04083641063295644,
-      "volatility": -0.4638237487859658,
-      "volume_ratio": 0.027764558716924622
+      "candle_strength": -0.014122414650211374,
+      "momentum_acceleration": 0.017265290922935866,
+      "rel_mom_1d": -0.1745085196490696,
+      "rel_mom_3d": -0.25705121296706707,
+      "rel_mom_7d": 0.04208846631558064,
+      "trend_consistency": 0.12283815424527149,
+      "volatility": 0.09301734233725227,
+      "volume_ratio": -0.17631197836110826
     },
     "samples": 49,
     "status": "updated"
   },
   "overview": {
-    "latest_btc_return": -0.05490274406861584,
+    "latest_btc_return": 0.01876110131862796,
     "latest_learning_samples": 49,
-    "latest_selected_average_excess_return": -0.03913656463203925,
-    "latest_selected_average_net_return": -0.09403930870065509,
-    "latest_settlement_at": "2026-11-21T00:08:03.127787+00:00",
-    "settlement_count": 7
+    "latest_selected_average_excess_return": 0.009342291545954317,
+    "latest_selected_average_net_return": 0.02810339286458228,
+    "latest_settlement_at": "2026-11-22T00:08:02.779500+00:00",
+    "settlement_count": 8
   },
   "performance": [
     {
@@ -278,6 +278,46 @@
       "selected_average_excess_return": -0.03913656463203925,
       "selected_average_net_return": -0.09403930870065509,
       "settled_at": "2026-11-21T00:08:03.127787+00:00"
+    },
+    {
+      "btc_return": 0.01876110131862796,
+      "date": "2026-11-21",
+      "learning_samples": 49,
+      "selected": [
+        {
+          "excess_return": -0.020460590450151583,
+          "gross_return": 0.000300510868476378,
+          "net_return": -0.001699489131523622,
+          "symbol": "USD1/USD"
+        },
+        {
+          "excess_return": -0.12127536031816044,
+          "gross_return": -0.10051425899953248,
+          "net_return": -0.10251425899953248,
+          "symbol": "IRYS/USD"
+        },
+        {
+          "excess_return": 0.158679267785498,
+          "gross_return": 0.17944036910412597,
+          "net_return": 0.17744036910412597,
+          "symbol": "VVV/USD"
+        },
+        {
+          "excess_return": -0.016793622196001223,
+          "gross_return": 0.003967479122626738,
+          "net_return": 0.001967479122626738,
+          "symbol": "PAXG/USD"
+        },
+        {
+          "excess_return": 0.04656176290858682,
+          "gross_return": 0.06732286422721478,
+          "net_return": 0.06532286422721478,
+          "symbol": "RARE/USD"
+        }
+      ],
+      "selected_average_excess_return": 0.009342291545954317,
+      "selected_average_net_return": 0.02810339286458228,
+      "settled_at": "2026-11-22T00:08:02.779500+00:00"
     }
   ],
   "plans": [
@@ -371,19 +411,19 @@
         "VVV/USD",
         "RARE/USD"
       ],
-      "status": "open"
+      "status": "settled"
     }
   ],
   "schema_version": 1,
   "source_state_version": 2,
   "weights": {
-    "candle_strength": 0.0891089003234155,
-    "momentum_acceleration": 0.06629521658029623,
-    "rel_mom_1d": 0.21991807360813656,
-    "rel_mom_3d": 0.18868765707457705,
-    "rel_mom_7d": 0.14123027928447837,
-    "trend_consistency": 0.099953623772721,
-    "volatility": -0.17978935555695047,
-    "volume_ratio": 0.1340537068387377
+    "candle_strength": 0.08882645203041127,
+    "momentum_acceleration": 0.06664052239875495,
+    "rel_mom_1d": 0.21642790321515518,
+    "rel_mom_3d": 0.1835466328152357,
+    "rel_mom_7d": 0.14207204861078998,
+    "trend_consistency": 0.10241038685762643,
+    "volatility": -0.17792900871020542,
+    "volume_ratio": 0.13052746727151554
   }
 }
