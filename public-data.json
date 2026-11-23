@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-22T01:18:00.511085+00:00",
+  "generated_at": "2026-11-23T00:17:46.305621+00:00",
   "learning": {
     "factor_correlations": {
-      "candle_strength": -0.014122414650211374,
-      "momentum_acceleration": 0.017265290922935866,
-      "rel_mom_1d": -0.1745085196490696,
-      "rel_mom_3d": -0.25705121296706707,
-      "rel_mom_7d": 0.04208846631558064,
-      "trend_consistency": 0.12283815424527149,
-      "volatility": 0.09301734233725227,
-      "volume_ratio": -0.17631197836110826
+      "candle_strength": 0.007985487718298651,
+      "momentum_acceleration": 0.21851624287903906,
+      "rel_mom_1d": 0.11217287199544351,
+      "rel_mom_3d": -0.12096219087409593,
+      "rel_mom_7d": -0.04287909360397621,
+      "trend_consistency": -0.1518103422775111,
+      "volatility": 0.14822160264099424,
+      "volume_ratio": 0.07279025958982649
     },
-    "samples": 49,
+    "samples": 50,
     "status": "updated"
   },
   "overview": {
-    "latest_btc_return": 0.01876110131862796,
-    "latest_learning_samples": 49,
-    "latest_selected_average_excess_return": 0.009342291545954317,
-    "latest_selected_average_net_return": 0.02810339286458228,
-    "latest_settlement_at": "2026-11-22T00:08:02.779500+00:00",
-    "settlement_count": 8
+    "latest_btc_return": 0.018116284597770704,
+    "latest_learning_samples": 50,
+    "latest_selected_average_excess_return": 0.004314362076746315,
+    "latest_selected_average_net_return": 0.022430646674517017,
+    "latest_settlement_at": "2026-11-23T00:08:04.229915+00:00",
+    "settlement_count": 9
   },
   "performance": [
     {
@@ -318,6 +318,46 @@
       "selected_average_excess_return": 0.009342291545954317,
       "selected_average_net_return": 0.02810339286458228,
       "settled_at": "2026-11-22T00:08:02.779500+00:00"
+    },
+    {
+      "btc_return": 0.018116284597770704,
+      "date": "2026-11-22",
+      "learning_samples": 50,
+      "selected": [
+        {
+          "excess_return": 0.052205455544139356,
+          "gross_return": 0.07232174014191006,
+          "net_return": 0.07032174014191006,
+          "symbol": "DRV/USD"
+        },
+        {
+          "excess_return": 0.038728147779843125,
+          "gross_return": 0.05884443237761383,
+          "net_return": 0.05684443237761383,
+          "symbol": "VVV/USD"
+        },
+        {
+          "excess_return": -0.051412128118553224,
+          "gross_return": -0.03129584352078252,
+          "net_return": -0.03329584352078252,
+          "symbol": "FAI/USD"
+        },
+        {
+          "excess_return": 0.004425898958429153,
+          "gross_return": 0.02454218355619986,
+          "net_return": 0.022542183556199857,
+          "symbol": "TAO/USD"
+        },
+        {
+          "excess_return": -0.02237556378012684,
+          "gross_return": -0.002259279182356133,
+          "net_return": -0.004259279182356133,
+          "symbol": "XRP/USD"
+        }
+      ],
+      "selected_average_excess_return": 0.004314362076746315,
+      "selected_average_net_return": 0.022430646674517017,
+      "settled_at": "2026-11-23T00:08:04.229915+00:00"
     }
   ],
   "plans": [
@@ -423,19 +463,19 @@
         "TAO/USD",
         "XRP/USD"
       ],
-      "status": "open"
+      "status": "settled"
     }
   ],
   "schema_version": 1,
   "source_state_version": 2,
   "weights": {
-    "candle_strength": 0.08882645203041127,
-    "momentum_acceleration": 0.06664052239875495,
-    "rel_mom_1d": 0.21642790321515518,
-    "rel_mom_3d": 0.1835466328152357,
-    "rel_mom_7d": 0.14207204861078998,
-    "trend_consistency": 0.10241038685762643,
-    "volatility": -0.17792900871020542,
-    "volume_ratio": 0.13052746727151554
+    "candle_strength": 0.08898616178477724,
+    "momentum_acceleration": 0.07101084725633573,
+    "rel_mom_1d": 0.21867136065506404,
+    "rel_mom_3d": 0.18112738899775377,
+    "rel_mom_7d": 0.14121446673871046,
+    "trend_consistency": 0.09937418001207621,
+    "volatility": -0.17496457665738555,
+    "volume_ratio": 0.13198327246331207
   }
 }
