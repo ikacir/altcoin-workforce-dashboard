@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-23T01:35:13.675867+00:00",
+  "generated_at": "2026-11-24T00:39:01.103905+00:00",
   "learning": {
     "factor_correlations": {
-      "candle_strength": 0.007985487718298651,
-      "momentum_acceleration": 0.21851624287903906,
-      "rel_mom_1d": 0.11217287199544351,
-      "rel_mom_3d": -0.12096219087409593,
-      "rel_mom_7d": -0.04287909360397621,
-      "trend_consistency": -0.1518103422775111,
-      "volatility": 0.14822160264099424,
-      "volume_ratio": 0.07279025958982649
+      "candle_strength": 0.1276829522616319,
+      "momentum_acceleration": 0.49154110193193856,
+      "rel_mom_1d": -0.2560064221910641,
+      "rel_mom_3d": -0.5012318323047402,
+      "rel_mom_7d": -0.21211641172348658,
+      "trend_consistency": -0.07248724178043593,
+      "volatility": -0.31758462133475446,
+      "volume_ratio": -0.49230012923780997
     },
-    "samples": 50,
+    "samples": 34,
     "status": "updated"
   },
   "overview": {
-    "latest_btc_return": 0.018116284597770704,
-    "latest_learning_samples": 50,
-    "latest_selected_average_excess_return": 0.004314362076746315,
-    "latest_selected_average_net_return": 0.022430646674517017,
-    "latest_settlement_at": "2026-11-23T00:08:04.229915+00:00",
-    "settlement_count": 9
+    "latest_btc_return": 0.0011754286330423191,
+    "latest_learning_samples": 34,
+    "latest_selected_average_excess_return": -0.04526995951405326,
+    "latest_selected_average_net_return": -0.04409453088101094,
+    "latest_settlement_at": "2026-11-24T00:08:06.041004+00:00",
+    "settlement_count": 10
   },
   "performance": [
     {
@@ -358,6 +358,46 @@
       "selected_average_excess_return": 0.004314362076746315,
       "selected_average_net_return": 0.022430646674517017,
       "settled_at": "2026-11-23T00:08:04.229915+00:00"
+    },
+    {
+      "btc_return": 0.0011754286330423191,
+      "date": "2026-11-23",
+      "learning_samples": 34,
+      "selected": [
+        {
+          "excess_return": -0.08170969638761005,
+          "gross_return": -0.07853426775456773,
+          "net_return": -0.08053426775456773,
+          "symbol": "VVV/USD"
+        },
+        {
+          "excess_return": -0.10613519948949213,
+          "gross_return": -0.1029597708564498,
+          "net_return": -0.10495977085644981,
+          "symbol": "DRV/USD"
+        },
+        {
+          "excess_return": -0.018849704933348255,
+          "gross_return": -0.015674276300305934,
+          "net_return": -0.017674276300305936,
+          "symbol": "AERO/USD"
+        },
+        {
+          "excess_return": -0.01721599025550724,
+          "gross_return": -0.01404056162246492,
+          "net_return": -0.01604056162246492,
+          "symbol": "PUMP/USD"
+        },
+        {
+          "excess_return": -0.0024392065043086202,
+          "gross_return": 0.000736222128733699,
+          "net_return": -0.001263777871266301,
+          "symbol": "TAO/USD"
+        }
+      ],
+      "selected_average_excess_return": -0.04526995951405326,
+      "selected_average_net_return": -0.04409453088101094,
+      "settled_at": "2026-11-24T00:08:06.041004+00:00"
     }
   ],
   "plans": [
@@ -475,19 +515,19 @@
         "PUMP/USD",
         "TAO/USD"
       ],
-      "status": "open"
+      "status": "settled"
     }
   ],
   "schema_version": 1,
   "source_state_version": 2,
   "weights": {
-    "candle_strength": 0.08898616178477724,
-    "momentum_acceleration": 0.07101084725633573,
-    "rel_mom_1d": 0.21867136065506404,
-    "rel_mom_3d": 0.18112738899775377,
-    "rel_mom_7d": 0.14121446673871046,
-    "trend_consistency": 0.09937418001207621,
-    "volatility": -0.17496457665738555,
-    "volume_ratio": 0.13198327246331207
+    "candle_strength": 0.09153982083000987,
+    "momentum_acceleration": 0.08084166929497451,
+    "rel_mom_1d": 0.21355123221124275,
+    "rel_mom_3d": 0.17110275235165898,
+    "rel_mom_7d": 0.13697213850424073,
+    "trend_consistency": 0.09792443517646748,
+    "volatility": -0.18131626908408063,
+    "volume_ratio": 0.12213726987855587
   }
 }
