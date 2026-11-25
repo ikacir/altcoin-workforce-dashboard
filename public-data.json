@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-24T01:33:06.486028+00:00",
+  "generated_at": "2026-11-25T00:17:04.739359+00:00",
   "learning": {
     "factor_correlations": {
-      "candle_strength": 0.1276829522616319,
-      "momentum_acceleration": 0.49154110193193856,
-      "rel_mom_1d": -0.2560064221910641,
-      "rel_mom_3d": -0.5012318323047402,
-      "rel_mom_7d": -0.21211641172348658,
-      "trend_consistency": -0.07248724178043593,
-      "volatility": -0.31758462133475446,
-      "volume_ratio": -0.49230012923780997
+      "candle_strength": -0.017061414871170872,
+      "momentum_acceleration": 0.17753626005941311,
+      "rel_mom_1d": -0.242443439710636,
+      "rel_mom_3d": -0.49555602047823105,
+      "rel_mom_7d": -0.5000398991472332,
+      "trend_consistency": -0.2265150187130692,
+      "volatility": -0.5397803269545962,
+      "volume_ratio": -0.4427145419946108
     },
-    "samples": 34,
+    "samples": 49,
     "status": "updated"
   },
   "overview": {
-    "latest_btc_return": 0.0011754286330423191,
-    "latest_learning_samples": 34,
-    "latest_selected_average_excess_return": -0.04526995951405326,
-    "latest_selected_average_net_return": -0.04409453088101094,
-    "latest_settlement_at": "2026-11-24T00:08:06.041004+00:00",
-    "settlement_count": 10
+    "latest_btc_return": -0.027998570166693937,
+    "latest_learning_samples": 49,
+    "latest_selected_average_excess_return": -0.05943582339316953,
+    "latest_selected_average_net_return": -0.08743439355986346,
+    "latest_settlement_at": "2026-11-25T00:08:02.496786+00:00",
+    "settlement_count": 11
   },
   "performance": [
     {
@@ -398,6 +398,46 @@
       "selected_average_excess_return": -0.04526995951405326,
       "selected_average_net_return": -0.04409453088101094,
       "settled_at": "2026-11-24T00:08:06.041004+00:00"
+    },
+    {
+      "btc_return": -0.027998570166693937,
+      "date": "2026-11-24",
+      "learning_samples": 49,
+      "selected": [
+        {
+          "excess_return": -0.20455074574100474,
+          "gross_return": -0.23054931590769867,
+          "net_return": -0.23254931590769867,
+          "symbol": "ELSA/USD"
+        },
+        {
+          "excess_return": -0.03537579598123386,
+          "gross_return": -0.061374366147927795,
+          "net_return": -0.0633743661479278,
+          "symbol": "PEARL/USD"
+        },
+        {
+          "excess_return": -0.012505280218344517,
+          "gross_return": -0.03850385038503845,
+          "net_return": -0.040503850385038453,
+          "symbol": "ALGO/USD"
+        },
+        {
+          "excess_return": -0.010632032615377263,
+          "gross_return": -0.0366306027820712,
+          "net_return": -0.0386306027820712,
+          "symbol": "ATOM/USD"
+        },
+        {
+          "excess_return": -0.03411526240988727,
+          "gross_return": -0.060113832576581205,
+          "net_return": -0.06211383257658121,
+          "symbol": "QNT/USD"
+        }
+      ],
+      "selected_average_excess_return": -0.05943582339316953,
+      "selected_average_net_return": -0.08743439355986346,
+      "settled_at": "2026-11-25T00:08:02.496786+00:00"
     }
   ],
   "plans": [
@@ -527,19 +567,19 @@
         "ATOM/USD",
         "QNT/USD"
       ],
-      "status": "open"
+      "status": "settled"
     }
   ],
   "schema_version": 1,
   "source_state_version": 2,
   "weights": {
-    "candle_strength": 0.09153982083000987,
-    "momentum_acceleration": 0.08084166929497451,
-    "rel_mom_1d": 0.21355123221124275,
-    "rel_mom_3d": 0.17110275235165898,
-    "rel_mom_7d": 0.13697213850424073,
-    "trend_consistency": 0.09792443517646748,
-    "volatility": -0.18131626908408063,
-    "volume_ratio": 0.12213726987855587
+    "candle_strength": 0.09119859253258646,
+    "momentum_acceleration": 0.08439239449616277,
+    "rel_mom_1d": 0.20870236341703002,
+    "rel_mom_3d": 0.16119163194209435,
+    "rel_mom_7d": 0.12697134052129605,
+    "trend_consistency": 0.0933941348022061,
+    "volatility": -0.19211187562317256,
+    "volume_ratio": 0.11328297903866366
   }
 }
