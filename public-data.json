@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-25T01:34:09.045602+00:00",
+  "generated_at": "2026-11-27T06:06:41.130108+00:00",
   "learning": {
     "factor_correlations": {
-      "candle_strength": -0.017061414871170872,
-      "momentum_acceleration": 0.17753626005941311,
-      "rel_mom_1d": -0.242443439710636,
-      "rel_mom_3d": -0.49555602047823105,
-      "rel_mom_7d": -0.5000398991472332,
-      "trend_consistency": -0.2265150187130692,
-      "volatility": -0.5397803269545962,
-      "volume_ratio": -0.4427145419946108
+      "candle_strength": 0.5056200068466562,
+      "momentum_acceleration": 0.22876575408100253,
+      "rel_mom_1d": 0.1799694552934673,
+      "rel_mom_3d": 0.13560241815126772,
+      "rel_mom_7d": 0.14281537682550693,
+      "trend_consistency": -0.11894863898456581,
+      "volatility": -0.5988990548816706,
+      "volume_ratio": -0.5396257740506245
     },
-    "samples": 49,
+    "samples": 45,
     "status": "updated"
   },
   "overview": {
-    "latest_btc_return": -0.027998570166693937,
-    "latest_learning_samples": 49,
-    "latest_selected_average_excess_return": -0.05943582339316953,
-    "latest_selected_average_net_return": -0.08743439355986346,
-    "latest_settlement_at": "2026-11-25T00:08:02.496786+00:00",
-    "settlement_count": 11
+    "latest_btc_return": -0.002978921595772399,
+    "latest_learning_samples": 45,
+    "latest_selected_average_excess_return": -0.028180400704236063,
+    "latest_selected_average_net_return": -0.031159322300008462,
+    "latest_settlement_at": "2026-11-27T00:08:03.014777+00:00",
+    "settlement_count": 13
   },
   "performance": [
     {
@@ -438,6 +438,86 @@
       "selected_average_excess_return": -0.05943582339316953,
       "selected_average_net_return": -0.08743439355986346,
       "settled_at": "2026-11-25T00:08:02.496786+00:00"
+    },
+    {
+      "btc_return": 0.019416407058111318,
+      "date": "2026-11-25",
+      "learning_samples": 43,
+      "selected": [
+        {
+          "excess_return": 0.0295150833265041,
+          "gross_return": 0.05093149038461542,
+          "net_return": 0.04893149038461542,
+          "symbol": "PROS/USD"
+        },
+        {
+          "excess_return": 0.17111180089520528,
+          "gross_return": 0.1925282079533166,
+          "net_return": 0.1905282079533166,
+          "symbol": "VVV/USD"
+        },
+        {
+          "excess_return": -0.012720754884198325,
+          "gross_return": 0.008695652173912993,
+          "net_return": 0.006695652173912993,
+          "symbol": "PEPE/USD"
+        },
+        {
+          "excess_return": 0.013358244051474344,
+          "gross_return": 0.034774651109585664,
+          "net_return": 0.03277465110958566,
+          "symbol": "LINK/USD"
+        },
+        {
+          "excess_return": 0.03329731456084217,
+          "gross_return": 0.05471372161895349,
+          "net_return": 0.05271372161895349,
+          "symbol": "LTC/USD"
+        }
+      ],
+      "selected_average_excess_return": 0.04691233758996551,
+      "selected_average_net_return": 0.06632874464807684,
+      "settled_at": "2026-11-26T00:07:54.925826+00:00"
+    },
+    {
+      "btc_return": -0.002978921595772399,
+      "date": "2026-11-26",
+      "learning_samples": 45,
+      "selected": [
+        {
+          "excess_return": -0.1305892024796652,
+          "gross_return": -0.1315681240754376,
+          "net_return": -0.1335681240754376,
+          "symbol": "VVV/USD"
+        },
+        {
+          "excess_return": 0.014411468947917673,
+          "gross_return": 0.013432547352145274,
+          "net_return": 0.011432547352145274,
+          "symbol": "BCH/USD"
+        },
+        {
+          "excess_return": 0.016984183599718983,
+          "gross_return": 0.016005262003946585,
+          "net_return": 0.014005262003946585,
+          "symbol": "LINK/USD"
+        },
+        {
+          "excess_return": 0.004551100624980211,
+          "gross_return": 0.0035721790292078115,
+          "net_return": 0.0015721790292078115,
+          "symbol": "XPL/USD"
+        },
+        {
+          "excess_return": -0.04625955421413197,
+          "gross_return": -0.04723847580990437,
+          "net_return": -0.04923847580990437,
+          "symbol": "PROS/USD"
+        }
+      ],
+      "selected_average_excess_return": -0.028180400704236063,
+      "selected_average_net_return": -0.031159322300008462,
+      "settled_at": "2026-11-27T00:08:03.014777+00:00"
     }
   ],
   "plans": [
@@ -579,19 +659,43 @@
         "LINK/USD",
         "LTC/USD"
       ],
+      "status": "settled"
+    },
+    {
+      "created_at": "2026-11-26T01:02:03.143260+00:00",
+      "date": "2026-11-26",
+      "selected_symbols": [
+        "VVV/USD",
+        "PROS/USD",
+        "XPL/USD",
+        "BCH/USD",
+        "LINK/USD"
+      ],
+      "status": "settled"
+    },
+    {
+      "created_at": "2026-11-27T01:01:55.537097+00:00",
+      "date": "2026-11-27",
+      "selected_symbols": [
+        "ELSA/USD",
+        "SEI/USD",
+        "WIF/USD",
+        "BCH/USD",
+        "LINK/USD"
+      ],
       "status": "open"
     }
   ],
   "schema_version": 1,
   "source_state_version": 2,
   "weights": {
-    "candle_strength": 0.09119859253258646,
-    "momentum_acceleration": 0.08439239449616277,
-    "rel_mom_1d": 0.20870236341703002,
-    "rel_mom_3d": 0.16119163194209435,
-    "rel_mom_7d": 0.12697134052129605,
-    "trend_consistency": 0.0933941348022061,
-    "volatility": -0.19211187562317256,
-    "volume_ratio": 0.11328297903866366
+    "candle_strength": 0.09951103418169885,
+    "momentum_acceleration": 0.09663241341801866,
+    "rel_mom_1d": 0.20827081915362572,
+    "rel_mom_3d": 0.1541520163247128,
+    "rel_mom_7d": 0.12958387638282554,
+    "trend_consistency": 0.09133477004241793,
+    "volatility": -0.19833742850359468,
+    "volume_ratio": 0.11205221321227761
   }
 }
