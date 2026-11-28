@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T00:23:06.329680+00:00",
+  "generated_at": "2026-11-28T01:27:49.071120+00:00",
   "learning": {
     "factor_correlations": {
       "candle_strength": 0.26430354971703984,
@@ -724,6 +724,18 @@
         "LINK/USD"
       ],
       "status": "settled"
+    },
+    {
+      "created_at": "2026-11-28T01:01:54.585550+00:00",
+      "date": "2026-11-28",
+      "selected_symbols": [
+        "SKY/USD",
+        "LTC/USD",
+        "AURORA/USD",
+        "PONS/USD",
+        "LIGHTER/USD"
+      ],
+      "status": "open"
     }
   ],
   "schema_version": 1,
