@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-27T06:06:41.130108+00:00",
+  "generated_at": "2026-11-28T00:23:06.329680+00:00",
   "learning": {
     "factor_correlations": {
-      "candle_strength": 0.5056200068466562,
-      "momentum_acceleration": 0.22876575408100253,
-      "rel_mom_1d": 0.1799694552934673,
-      "rel_mom_3d": 0.13560241815126772,
-      "rel_mom_7d": 0.14281537682550693,
-      "trend_consistency": -0.11894863898456581,
-      "volatility": -0.5988990548816706,
-      "volume_ratio": -0.5396257740506245
+      "candle_strength": 0.26430354971703984,
+      "momentum_acceleration": -0.3136519597574471,
+      "rel_mom_1d": -0.018856320910917664,
+      "rel_mom_3d": 0.2702120310824747,
+      "rel_mom_7d": -0.09446465150477659,
+      "trend_consistency": -0.04699524977614669,
+      "volatility": -0.5214597560745067,
+      "volume_ratio": -0.5224038817357136
     },
-    "samples": 45,
+    "samples": 40,
     "status": "updated"
   },
   "overview": {
-    "latest_btc_return": -0.002978921595772399,
-    "latest_learning_samples": 45,
-    "latest_selected_average_excess_return": -0.028180400704236063,
-    "latest_selected_average_net_return": -0.031159322300008462,
-    "latest_settlement_at": "2026-11-27T00:08:03.014777+00:00",
-    "settlement_count": 13
+    "latest_btc_return": -0.013344904488520326,
+    "latest_learning_samples": 40,
+    "latest_selected_average_excess_return": 0.005573975342689131,
+    "latest_selected_average_net_return": -0.007770929145831195,
+    "latest_settlement_at": "2026-11-28T00:07:56.922530+00:00",
+    "settlement_count": 14
   },
   "performance": [
     {
@@ -518,6 +518,46 @@
       "selected_average_excess_return": -0.028180400704236063,
       "selected_average_net_return": -0.031159322300008462,
       "settled_at": "2026-11-27T00:08:03.014777+00:00"
+    },
+    {
+      "btc_return": -0.013344904488520326,
+      "date": "2026-11-27",
+      "learning_samples": 40,
+      "selected": [
+        {
+          "excess_return": -0.05170918456417406,
+          "gross_return": -0.06305408905269438,
+          "net_return": -0.06505408905269439,
+          "symbol": "ELSA/USD"
+        },
+        {
+          "excess_return": 0.008746151889767685,
+          "gross_return": -0.0025987525987526405,
+          "net_return": -0.004598752598752641,
+          "symbol": "SEI/USD"
+        },
+        {
+          "excess_return": 0.06668813541605245,
+          "gross_return": 0.05534323092753213,
+          "net_return": 0.053343230927532126,
+          "symbol": "WIF/USD"
+        },
+        {
+          "excess_return": -0.007841224650709466,
+          "gross_return": -0.01918612913922979,
+          "net_return": -0.021186129139229792,
+          "symbol": "BCH/USD"
+        },
+        {
+          "excess_return": 0.011985998622509044,
+          "gross_return": 0.0006410941339887177,
+          "net_return": -0.0013589058660112823,
+          "symbol": "LINK/USD"
+        }
+      ],
+      "selected_average_excess_return": 0.005573975342689131,
+      "selected_average_net_return": -0.007770929145831195,
+      "settled_at": "2026-11-28T00:07:56.922530+00:00"
     }
   ],
   "plans": [
@@ -683,19 +723,19 @@
         "BCH/USD",
         "LINK/USD"
       ],
-      "status": "open"
+      "status": "settled"
     }
   ],
   "schema_version": 1,
   "source_state_version": 2,
   "weights": {
-    "candle_strength": 0.09951103418169885,
-    "momentum_acceleration": 0.09663241341801866,
-    "rel_mom_1d": 0.20827081915362572,
-    "rel_mom_3d": 0.1541520163247128,
-    "rel_mom_7d": 0.12958387638282554,
-    "trend_consistency": 0.09133477004241793,
-    "volatility": -0.19833742850359468,
-    "volume_ratio": 0.11205221321227761
+    "candle_strength": 0.10479710517603964,
+    "momentum_acceleration": 0.09035937422286971,
+    "rel_mom_1d": 0.20789369273540736,
+    "rel_mom_3d": 0.15955625694636227,
+    "rel_mom_7d": 0.12769458335273,
+    "trend_consistency": 0.09039486504689499,
+    "volatility": -0.2087666236250848,
+    "volume_ratio": 0.10160413557756334
   }
 }
